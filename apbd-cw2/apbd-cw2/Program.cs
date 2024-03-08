@@ -7,3 +7,11 @@ string y = "def";
 string z = x + y;
 Console.WriteLine(x + " " + "abc");
 Console.WriteLine(z);
+if (x.Equals("abc"))
+{
+    Console.WriteLine("yes");
+}
+else
+{
+    Console.WriteLine("no");
+}
