@@ -16,15 +16,15 @@ else
     Console.WriteLine("no");
 }
 
-static double GetAverage(int[] tab)
+static double GetAverage(int[] x)
 {
     double result = 0.0;
-    for (int i = 0; i < tab.Length; i++)
+    for (int i = 0; i < x.Length; i++)
     {
-        result += tab[i];
+        result += x[i];
     }
 
-    return result / tab.Length;
+    return result / x.Length;
 }
 
 static double GetMax(int[] tab)
