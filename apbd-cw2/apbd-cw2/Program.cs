@@ -27,7 +27,21 @@ static double GetAverage(int[] tab)
     return result / tab.Length;
 }
 
+static double GetMax(int[] tab)
+{
+    double result = 0.0;
+    for (int i = 0; i < tab.Length; i++)
+    {
+        if (result < tab[i])
+            result = tab[i];
+    }
+
+    return result;
+}
+
 int[] tab = {1, 2, 3, 4};
 
 double avg = GetAverage(tab);
 Console.WriteLine(avg);
+double max = GetMax(tab);
+Console.WriteLine(max);
